@@ -1,0 +1,39 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Estudiante de Desarrollo de Software",
+    company: "TalentoTech y Oracle",
+    description: "Futuro graduado del Bootcamp de Programación de TalentoTech y del programa ONE de Oracle, especializándome en desarrollo backend con tecnologías como Java y Spring. Enfocado en adquirir habilidades en soluciones escalables y de alto rendimiento.",
+  },
+  {
+    date: "2023",
+    title: "Estudiante de Desarrollo de Software",
+    company: "Udemy",
+    description: "Estudio varios cursos de desarrollo web, incluyendo JavaScript, TypeScript, Node.js, NestJS, y Docker, buscando fortalecer mis habilidades y conocimiento en el campo.",
+  },
+  {
+    date: "2023",
+    title: "Estudiante de Programación",
+    company: "SENA",
+    description: "Participé en el programa de Análisis y Desarrollo de Software, donde adquirí conocimientos fundamentales en programación y desarrollo de software.",
+  },
+  {
+    date: "2021",
+    title: "Estudiante de Ingeniería de Software",
+    company: "Institución Universitaria EAM",
+    description: "Estudié Ingeniería de Software, donde aprendí sobre diferentes paradigmas de programación y desarrollo de aplicaciones, aunque no culminé mis estudios.",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
